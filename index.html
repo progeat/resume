@@ -5,89 +5,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="hohlov, cv, resume">
     <meta name="description" content="Это сайт — резюме Хохлова Андрея">
+    <link rel="stylesheet" href="style.css">
     <title>Hohlov Resume</title>
 </head>
 <body>
+    <div class="container">
+        <div class="info">
 
-    <img src="imgs/avatar.jpg" alt="Хохлов Андрей" width="200">
+            <img class="avatar" src="imgs/avatar.jpg" alt="Хохлов Андрей">
 
-    <h1>Хохлов Андрей</h1>
+            <div class="info-text">
 
-    <p>Я стою на истоках в своём пути по изучению <strong>FRONTEND</strong></p>
+                <h1>Хохлов Андрей</h1>
 
-    <p>Я люблю <em>путешествовать, активный образ жизни, познавать новое, заводить новые знакомства с интересными людьми и единомышленниками, делится знаниями с заинтересовыванными людьми</em></p>
+                <p>Я стою на истоках в своём пути по изучению <strong>FRONTEND</strong></p>
 
-    <h4>Список социальных сетей:</h4>
+                <p>Я люблю <em>путешествовать, активный образ жизни, познавать новое, заводить новые знакомства с интересными людьми и единомышленниками, делится знаниями с заинтересовыванными людьми</em></p>
 
-    <a href="https://www.instagram.com/progeat/" target="_blank">Instagram</a>
-    |
-    <a href="https://t.me/hohlov_a_a" target="_blank">Telegram</a>
-    |
-    <a href="https://vk.com/id2843856" target="_blank">VK</a>
+                <h4>Список социальных сетей:</h4>
 
-    <h2>Мои хобби</h2>
+                <a class="link" href="https://www.instagram.com/progeat/" target="_blank">Instagram</a>
+                |
+                <a class="link" href="https://t.me/hohlov_a_a" target="_blank">Telegram</a>
+                |
+                <a class="link" href="https://vk.com/id2843856" target="_blank">VK</a>
 
-    <ol>
-        <li>Программирование</li>
-        <li>Путешествие</li>
-        <li>Фотография</li>
-        <li>Велосипед</li>
-    </ol>
+            </div>
 
-    <h2>Опыт работы</h2>
-
-    <table>
-        <thead>
-            <tr>
-                <th>Название</th>
-                <th>Должность</th>
-                <th>Год</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>LaptopSystems</td>
-                <td>Специалист</td>
-                <td>2006 - 2008</td>
-            </tr>
-            <tr>
-                <td>ПроСервис</td>
-                <td>Инженер</td>
-                <td>2008 - 2009</td>
-            </tr>
-            <tr>
-                <td>Буком</td>
-                <td>Инженер</td>
-                <td>2010 - 2019</td>
-            </tr>
-            <tr>
-                <td>Транстелематика</td>
-                <td>Вед. инженер</td>
-                <td>2019 - по н.вр.</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <h2>Связаться со мной</h2>
-
-    <form>
-        <div>
-            <label for="name">Ваше имя:</label>
-            <input type="text" id="name" placeholder="Введите имя">
         </div>
 
-        <div>
-            <label for="email">Ваш email:</label>
-            <input type="email" id="email" placeholder="Введите email">
+        <div class="card card-hobby">
+            <h2>Мои хобби</h2>
+
+            <ol class="list-hobby">
+                <li>Программирование</li>
+                <li>Путешествие</li>
+                <li>Фотография</li>
+                <li>Велосипед</li>
+            </ol>
         </div>
 
-        <div>
-            <label for="email">Ваше сообщение:</label>
-            <br>
-            <textarea id="message" cols="30" rows="10" placeholder="Введите сообщение..."></textarea>
+        <div class="card card-work">
+            <h2>Опыт работы</h2>
+
+            <table class="table">
+                <!-- <thead>
+                    <tr>
+                        <th>Название</th>
+                        <th>Должность</th>
+                        <th>Год</th>
+                    </tr>
+                </thead> -->
+                <tbody>
+                    <tr>
+                        <td>LaptopSystems</td>
+                        <td>Специалист</td>
+                        <td>2006 - 2008</td>
+                    </tr>
+                    <tr>
+                        <td>ПроСервис</td>
+                        <td>Инженер</td>
+                        <td>2008 - 2009</td>
+                    </tr>
+                    <tr>
+                        <td>Буком</td>
+                        <td>Инженер</td>
+                        <td>2010 - 2020</td>
+                    </tr>
+                    <tr>
+                        <td>Транстелематика</td>
+                        <td>Вед. инженер</td>
+                        <td>2020 - по н.вр.</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
 
-        <button type="submit">Отправить</button>
-    </form>
+        <div class="card card-road">
+            <h2>Мой путь</h2>
+
+            <ul class="list-road">
+                <li>Выучится на профессию Frontend-разработчика</li>
+                <li>Получить позицию Frontend-разработчика в Бигтех</li>
+            </ul>
+        </div>
+
+        <form class="form">
+            <h2>Связаться со мной</h2>
+
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" placeholder="Введите имя">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Ваш email:</label>
+                    <input type="email" id="email" placeholder="Введите email">
+                </div>
+
+            </div>    
+
+            <div class="form-group">
+                <label for="email">Ваше сообщение:</label>
+                <textarea id="message" cols="30" rows="10" placeholder="Введите сообщение..."></textarea>
+            </div>
+
+            <button class="btn" type="submit">Отправить</button>
+        </form>
+    </div>
 </body>
 </html>
